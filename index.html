@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <div class="logo-text">Kevin Van</div>
+                </div>
+                <nav>
+                    <div class="toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navbar">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="pic">
+                    <img src="./images/hs.jpg" alt="Profile Picture">
+                </div>
+                <div class="bio">
+                    <h5>Hi! I'm a <span class="input"></span></h5>
+                    <h1>Kevin Van</h1>
+                    <p> "Hardware eventually fails. Software eventually works." - Michael Hartung
+                    </p>
+                    <div class="btn-group">
+                        <a href="#" class="btn resume">Download Resume</a>
+                        <a href="#" class="btn">Contact</a>
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+    <script>
+        var togglebtn=document.querySelector(".toggle");
+        var navbar=document.querySelector(".navbar");
+        var links=document.querySelector(".navbar li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            navbar.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Software Engineer", "Web Developer","UX Designer","Avid Learner"],
+            typeSpeed: 80,
+            backDelay:2000,
+            loop:true,
+            fadeOut:true
+        })
+    </script>
+</body>
+
+</html>
