@@ -98,13 +98,14 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
 
-        <form action="#">
+        <form action="https://api.web3forms.com/submit" method="POST">
             <div class="input-box">
-                <input type="text" placeholder="Name">
-                <input type="text" placeholder="Email Address">
-                <input type="text" placeholder="Email Subject">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Hello! What would you like say?"></textarea>
+                <input type="text" name="Name" placeholder="Full Name">
+                <input type="text" name="Email Address" placeholder="Email Address">
+                <input type="text" name="Email Subject" placeholder="Email Subject">
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Hello! What would you like say?"></textarea>
             <input type="submit" value="Send Message" class="btn">
+            <input type="hidden" name="access_key" value="086f52ad-be0d-4c1d-be7d-9dc49e595bc4">
         </form>
     </section>
 
