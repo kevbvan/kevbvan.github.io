@@ -35,10 +35,12 @@
             <div class="home-content">
                 <h5>Hi! I'm a <span class="input"></span></h5>
                 <h1>Kevin Van</h1>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam impedit tempora architecto labore minus itaque iusto. Eius exercitationem perspiciatis possimus distinctio impedit vitae. Cumque sapiente delectus nulla incidunt quasi praesentium!</p>
+                <p> I have worn many hats in my life. <br><br>I was an actor. <br>I was a stage manager. <br>I was a barista. <br>I was a painter. 
+                    <br><br> But one thing remains the same. No matter the problem, no matter the circumstance, <b>creativity</b> is what ties us all together.</p>
+                <h5>I'm a <span>Creator</span></h5>
                 <div class="btn-group">
-                    <a href="#" class="btn resume">Download Resume</a>
-                    <a href="#" class="btn">Contact</a>
+                    <a href="./Kevin Van SE Resume.pdf" download="Kevin Van Resume" class="btn resume">Download Resume</a>
+                    <a href="#contact" class="btn">Contact</a>
                 </div>
                 <div class="social">
                     <a href="https://www.linkedin.com/in/kevin-b-van/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
@@ -51,13 +53,19 @@
         <div class="container">
             <div class="about-content">
                 <h2 class="heading">About <span>Me!</span></h2>
-                <p>As a software developer, I am driven by an insatiable curiosity and a relentless desire to join together complex solutions with creative techniques. With a foundation in production stage management in the arts, I've had the privilege of acquiring my MSCS at Northeastern University, which has cultivated my technical skills and deepened my passion for problem-solving through code.<br><br>
+                <p>As a software developer, I am driven by an insatiable curiosity and a relentless desire to build complex ideas using creative solutions. 
+                    With a foundation in production stage management in the arts, I've had the privilege of acquiring my MSCS at Northeastern University, 
+                    which has cultivated my technical skills and deepened my passion for problem-solving through code.<br><br>
 
-                    What sets me apart is my unwavering enthusiasm for learning. In the ever-changing landscape of technology, I thrive on challenges that require me to adapt and grow. My commitment to continuous improvement is not only a personal ethos but a driving force that fuels my professional journey.<br><br>
+                    What sets me apart is my unwavering enthusiasm for learning. In the ever-changing landscape of technology, I thrive on challenges that 
+                    require me to adapt and grow. My commitment to continuous improvement is not only a personal ethos but a driving force that fuels my professional journey.<br><br>
                     
-                    My collaborative spirit and open-mindedness make me an asset to any team. I believe in the power of collective intelligence and flourish in the synergy that arises from diverse perspectives. I am eager to work alongside like-minded individuals who share a vision for creating technology that makes a meaningful impact in our everyday lives.<br><br>
+                    My collaborative spirit and open-mindedness make me an asset to any team. I believe in the power of collective intelligence and flourish 
+                    in the synergy that arises from diverse perspectives. I am eager to work alongside like-minded individuals who share a vision for creating 
+                    technology that makes a meaningful impact in our everyday lives.<br><br>
                     
-                    As a software developer, my mission is to solve complex problems with elegant solutions and to deliver high-quality, maintainable code. If you're looking for a dedicated software developer to join your team or collaborate on a project, please don't hesitate to reach out. I'm eager to explore opportunities in the ever-evolving world of software development!<br></p>
+                    If you're looking for a dedicated software developer to join your team or collaborate on a project, please don't hesitate to reach out. 
+                    I'm eager to explore opportunities in the ever-evolving world of software development!<br></p>
             </div>
             <div class="about-img">
                 <img src="./images/about.jpg" alt="about-photo">
@@ -67,6 +75,12 @@
     
     <section class="portfolio" id="portfolio">
         <h2 class="heading">My <span>Portfolio!</span></h2>
+        
+        <div class="logos">
+            <div class="logos-slide">
+                <!-- Add framework and skills images and create infinite logo carousel. Node/Express, React, Firebase, AWS, Bootstrap, jQuery,  -->
+            </div>
+        </div>
 
         <div class="portfolio-container">
             <div class="portfolio-box">
@@ -100,10 +114,11 @@
 
         <form action="https://api.web3forms.com/submit" method="POST">
             <div class="input-box">
-                <input type="text" name="Name" placeholder="Full Name">
-                <input type="text" name="Email Address" placeholder="Email Address">
-                <input type="text" name="Email Subject" placeholder="Email Subject">
-            <textarea name="message" id="" cols="30" rows="10" placeholder="Hello! What would you like say?"></textarea>
+                <input type="text" name="Name" placeholder="Full Name" required>
+                <input type="text" name="Email Address" placeholder="Email Address" required>
+                <input type="text" name="Email Subject" placeholder="Email Subject" required>
+            </div>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Hello! What would you like say?" required></textarea>
             <input type="submit" value="Send Message" class="btn">
             <input type="hidden" name="access_key" value="086f52ad-be0d-4c1d-be7d-9dc49e595bc4">
         </form>
