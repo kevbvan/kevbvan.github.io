@@ -7,11 +7,11 @@
     scroll-behavior: smooth;
 }
 :root{
-    --bg-color: #333;
-    --second-bg-color: #222;
-    --img-border-color: #444;
-    --text-color: #fff;
-    --accent-text-color: #0ef;
+    --bg-color: #0C1B33;
+    --second-bg-color: #78A1BB;
+    --img-border-color: #fa9e4257;
+    --text-color: #ebf5ee;
+    --accent-text-color: #fa9f42;
     --shadow-color: #000;
 }
 body{
@@ -275,6 +275,19 @@ section{
 .resume{
     background-color: var(--second-bg-color);
 }
+.resume h2{
+    margin-bottom: 4rem;
+}
+.resume .resume-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+.resume iframe{
+    width: 85%;
+    height:60rem;
+}
 /* CONTACT PAGE*/
 .contact h2{
     margin-bottom: 3rem
@@ -284,6 +297,9 @@ section{
     margin: 1rem auto;
     text-align: center;
     margin-bottom: 2rem;
+}
+.contact form ::placeholder{
+    color: var(--text-color);
 }
 .contact form .input-box{
     display: flex;
@@ -376,11 +392,12 @@ form textarea{
         padding: 40px 0px;
     }
     .container .home-img{
-        width: 400px;
-        height: 500px;
+        width: 350px;
+        height: 450px;
     }
     .about .about-img{
-        width: 400px;
-        height: 500px;
+        display: none;
     }
+
+
 }
