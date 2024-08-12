@@ -217,17 +217,22 @@ section{
 
 .portfolio-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 40% 40%;
+    justify-content: center;
     align-items: center;
-    gap: 2.5rem;
+    column-gap: 3rem;
+    row-gap: 6rem;
+    margin-bottom: 4rem;
 }
 
 .portfolio-container .portfolio-box{
+    display: flex;
     position: relative;
+    width: 40rem;
+    height: 25rem;
     border-radius: 2rem;
     box-shadow: 0 0 1rem var(--second-bg-color);
-    overflow: hidden;
-    display: flex;
+    overflow: hidden;   
 }
 
 .portfolio-box img{
@@ -240,7 +245,6 @@ section{
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, .1), var(--accent-text-color));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -269,6 +273,9 @@ section{
 .portfolio-layer a i{
     font-size: 2rem;
     color: var(--second-bg-color);
+}
+.portfolio-layer a i:hover{
+    transform: scale(1.2);
 }
 
 /* RESUME PAGE */
