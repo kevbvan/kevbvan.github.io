@@ -211,6 +211,30 @@ section{
 
 /* PORTFOLIO PAGE*/
 
+.logos{
+    position: relative;
+}
+
+.logos .main-stack{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.logos .main-stack span{
+    color:var(--accent-text-color)
+}
+.logos .stack-logos{
+    display:grid;
+}
+.logos .stack-logos img{
+    background: black;
+}
+.logos .skills{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.logos .skills span{
+    color: var(--accent-text-color);
+}
 .portfolio h2{
     margin-bottom: 4rem;
 }
