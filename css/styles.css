@@ -318,6 +318,26 @@ section{
     width: 85%;
     height:60rem;
 }
+
+.resume .resume-btn{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.resume .resume-btn .btn{
+    border-color: var(--accent-text-color);
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    padding: .75rem 1.5rem;
+    margin: .4rem 0;
+    border-radius: 2rem;
+    border: .2rem solid var(--text-color);
+    box-shadow: 0 .7rem -.4rem rgb(0 0 0 /75);
+}
+.resume .resume-btn .btn:hover{
+    border-color: var(--accent-text-color);
+    color: var(--accent-text-color)
+}
 /* CONTACT PAGE*/
 .contact h2{
     margin-bottom: 3rem
