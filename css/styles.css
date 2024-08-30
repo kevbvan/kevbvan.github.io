@@ -213,6 +213,9 @@ section{
 
 .logos{
     position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 4rem;
 }
 
 .logos .main-stack{
@@ -222,12 +225,6 @@ section{
 .logos .main-stack span{
     color:var(--accent-text-color)
 }
-.logos .stack-logos{
-    display:grid;
-}
-.logos .stack-logos img{
-    background: black;
-}
 .logos .skills{
     text-align: center;
     font-size: 1.5rem;
@@ -235,10 +232,59 @@ section{
 .logos .skills span{
     color: var(--accent-text-color);
 }
+.stack-logos{
+    white-space: nowrap;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.stack-logos img{
+    height: 5rem;
+    margin: 0 2rem;
+}
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+.logos-slide{
+    display: inline-block;
+    text-align: center;
+    animation: 30s slide infinite linear;
+}
+.logos-slide img{
+   height: 5rem;
+   margin: 0 2rem; 
+}
+.logos:before,
+.logos:after{
+    position: absolute;
+    top: 0;
+    width: 20rem;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+.logos:before{
+    left: 0;
+    background:linear-gradient(to left, rgba(255,255,255, 0), var(--bg-color));
+}
+.logos:after{
+    right: 0;
+    background:linear-gradient(to right, rgba(255,255,255, 0), var(--bg-color));
+}
 .portfolio h2{
     margin-bottom: 4rem;
 }
-
+.projects{
+    text-align: center;
+    font-size: 1.75rem;
+}
+.projects span{
+    color: var(--accent-text-color);
+}
 .portfolio-container {
     display: grid;
     grid-template-columns: 40% 40%;
@@ -447,6 +493,20 @@ form textarea{
     }
     .about .about-img{
         display: none;
+    }
+    .logos:before,
+    .logos:after{
+        position: absolute;
+        top: 0;
+        width: 5rem;
+        height: 100%;
+        content: "";
+        z-index: 2;
+    }
+    .stack-logos{
+        display: inline-block;
+        text-align: center;
+        animation: 30s slide infinite linear;
     }
     .portfolio-container{
         grid-template-columns: 1fr;
